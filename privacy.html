@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - DayDayUp</title>
+    <meta name="description" content="DayDayUp浏览器扩展的隐私政策，了解我们如何保护您的个人信息">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="material-icons">rocket_launch</span>
+                        <span class="logo-text">DayDayUp</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                    <button class="language-btn" onclick="toggleLanguage()">
+                        <span class="material-icons">language</span>
+                        <span id="current-lang">中文</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="privacy-page">
+        <div class="container">
+            <div class="privacy-header">
+                <h1 data-i18n="privacy.page.title">隐私政策</h1>
+                <p class="privacy-date" data-i18n="privacy.page.date">最后更新：2024年1月1日</p>
+            </div>
+
+            <div class="privacy-content">
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.intro.title">引言</h2>
+                    <p data-i18n="privacy.page.intro.desc">DayDayUp（以下简称"我们"）非常重视您的隐私保护。本隐私政策说明了我们如何收集、使用和保护您的个人信息。使用我们的浏览器扩展即表示您同意本隐私政策的内容。</p>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.collection.title">信息收集</h2>
+                    <h3 data-i18n="privacy.page.collection.local.title">本地存储信息</h3>
+                    <p data-i18n="privacy.page.collection.local.desc">我们的扩展程序仅在您的设备本地存储以下信息：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.collection.local.item1">您的自定义励志名言</li>
+                        <li data-i18n="privacy.page.collection.local.item2">显示设置（位置、时长、语言偏好等）</li>
+                        <li data-i18n="privacy.page.collection.local.item3">最后显示日期记录</li>
+                        <li data-i18n="privacy.page.collection.local.item4">扩展程序的使用偏好</li>
+                    </ul>
+                    
+                    <h3 data-i18n="privacy.page.collection.no.title">我们不收集的信息</h3>
+                    <p data-i18n="privacy.page.collection.no.desc">我们承诺不收集以下信息：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.collection.no.item1">您的浏览历史</li>
+                        <li data-i18n="privacy.page.collection.no.item2">个人身份信息</li>
+                        <li data-i18n="privacy.page.collection.no.item3">网站访问内容</li>
+                        <li data-i18n="privacy.page.collection.no.item4">任何敏感个人信息</li>
+                    </ul>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.usage.title">信息使用</h2>
+                    <p data-i18n="privacy.page.usage.desc">我们收集的信息仅用于以下目的：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.usage.item1">提供励志名言显示服务</li>
+                        <li data-i18n="privacy.page.usage.item2">记住您的个性化设置</li>
+                        <li data-i18n="privacy.page.usage.item3">确保每天只显示一次提醒</li>
+                        <li data-i18n="privacy.page.usage.item4">改善用户体验</li>
+                    </ul>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.security.title">信息安全</h2>
+                    <p data-i18n="privacy.page.security.desc">我们采用以下措施保护您的信息安全：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.security.item1">所有数据仅存储在您的设备本地</li>
+                        <li data-i18n="privacy.page.security.item2">不向任何第三方服务器传输数据</li>
+                        <li data-i18n="privacy.page.security.item3">使用浏览器内置的安全存储机制</li>
+                        <li data-i18n="privacy.page.security.item4">定期更新扩展程序以修复安全漏洞</li>
+                    </ul>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.sharing.title">信息共享</h2>
+                    <p data-i18n="privacy.page.sharing.desc">我们不会与任何第三方共享您的个人信息，包括：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.sharing.item1">广告商或营销公司</li>
+                        <li data-i18n="privacy.page.sharing.item2">数据分析服务</li>
+                        <li data-i18n="privacy.page.sharing.item3">其他第三方服务提供商</li>
+                    </ul>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.cookies.title">Cookie和追踪技术</h2>
+                    <p data-i18n="privacy.page.cookies.desc">我们的扩展程序不使用Cookie或任何追踪技术。所有数据都通过浏览器的本地存储API进行管理。</p>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.children.title">儿童隐私</h2>
+                    <p data-i18n="privacy.page.children.desc">我们的服务不针对13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您认为我们可能收集了儿童的个人信息，请联系我们。</p>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.changes.title">隐私政策变更</h2>
+                    <p data-i18n="privacy.page.changes.desc">我们可能会不时更新本隐私政策。重大变更时，我们会在扩展程序中通知您。建议您定期查看本政策以了解最新信息。</p>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.contact.title">联系我们</h2>
+                    <p data-i18n="privacy.page.contact.desc">如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+                    <ul>
+                        <li data-i18n="privacy.page.contact.email">邮箱：privacy@daydayup.com</li>
+                        <li data-i18n="privacy.page.contact.support">技术支持：hwygy001@gmail.com</li>
+                    </ul>
+                </section>
+
+                <section class="privacy-section">
+                    <h2 data-i18n="privacy.page.jurisdiction.title">适用法律</h2>
+                    <p data-i18n="privacy.page.jurisdiction.desc">本隐私政策受中华人民共和国法律管辖。任何争议将通过友好协商解决。</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="material-icons">rocket_launch</span>
+                        <span>DayDayUp</span>
+                    </div>
+                    <p data-i18n="footer.description">让每一天都充满正能量</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links.title">快速链接</h4>
+                    <a href="index.html" data-i18n="footer.links.home">首页</a>
+                    <a href="index.html#features" data-i18n="footer.links.features">功能特色</a>
+                    <a href="index.html#download" data-i18n="footer.links.download">下载安装</a>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact.title">联系我们</h4>
+                    <p data-i18n="footer.contact.email">邮箱：hwygy001@gmail.com</p>
+                    <p data-i18n="footer.contact.version">版本：1.0.0</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DayDayUp. <span data-i18n="footer.rights">保留所有权利。</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

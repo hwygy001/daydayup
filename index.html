@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayDayUp - 每日励志浏览器扩展</title>
+    <meta name="description" content="每天第一次打开浏览器时显示励志名言，支持自定义设置和多语言，助你保持积极心态">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="material-icons">rocket_launch</span>
+                    <span class="logo-text">DayDayUp</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link" data-i18n="nav.features">功能特色</a>
+                    <a href="#download" class="nav-link" data-i18n="nav.download">下载安装</a>
+                    <a href="#privacy" class="nav-link" data-i18n="nav.privacy">隐私政策</a>
+                    <button class="language-btn" onclick="toggleLanguage()">
+                        <span class="material-icons">language</span>
+                        <span id="current-lang">中文</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-i18n="hero.title">每日励志，助你前行</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">每天第一次打开浏览器时，让励志名言为你开启美好的一天</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary" data-i18n="hero.download">立即下载</a>
+                        <a href="#features" class="btn btn-secondary" data-i18n="hero.learn-more">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="demo-card">
+                        <div class="demo-quote">
+                            <span class="material-icons">format_quote</span>
+                            <p data-i18n="demo.quote">今天的努力是为了明天的收获</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title" data-i18n="features.title">功能特色</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">schedule</span>
+                        </div>
+                        <h3 data-i18n="features.daily.title">每日提醒</h3>
+                        <p data-i18n="features.daily.desc">每天第一次打开浏览器时自动显示励志名言，为你开启美好的一天</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">translate</span>
+                        </div>
+                        <h3 data-i18n="features.multilingual.title">多语言支持</h3>
+                        <p data-i18n="features.multilingual.desc">支持中英文双语，根据系统语言自动切换，全球用户友好</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">settings</span>
+                        </div>
+                        <h3 data-i18n="features.custom.title">个性化设置</h3>
+                        <p data-i18n="features.custom.desc">自定义名言、显示位置、时长等，打造专属的励志体验</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">devices</span>
+                        </div>
+                        <h3 data-i18n="features.cross-platform.title">跨平台支持</h3>
+                        <p data-i18n="features.cross-platform.desc">支持Chrome、Firefox、Edge等主流浏览器，随时随地使用</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <div class="container">
+                <h2 class="section-title" data-i18n="download.title">下载安装</h2>
+                <div class="download-content">
+                    <div class="download-info">
+                        <h3 data-i18n="download.subtitle">简单三步，开始你的励志之旅</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="download.step1.title">下载扩展</h4>
+                                    <p data-i18n="download.step1.desc">点击下方按钮下载DayDayUp扩展文件</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="download.step2.title">安装到浏览器</h4>
+                                    <p data-i18n="download.step2.desc">打开浏览器扩展管理页面，拖拽文件进行安装</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="download.step3.title">开始使用</h4>
+                                    <p data-i18n="download.step3.desc">明天打开浏览器时，就能看到励志名言了</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-action">
+                        <a href="#" class="btn btn-primary btn-large" data-i18n="download.button">
+                            <span class="material-icons">download</span>
+                            下载扩展
+                        </a>
+                        <p class="download-note" data-i18n="download.note">支持 Chrome 88+ / Firefox 85+ / Edge 88+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="privacy">
+            <div class="container">
+                <h2 class="section-title" data-i18n="privacy.title">隐私政策</h2>
+                <div class="privacy-content">
+                    <p data-i18n="privacy.intro">我们重视您的隐私，承诺保护您的个人信息安全。</p>
+                    <div class="privacy-details">
+                        <div class="privacy-item">
+                            <h4 data-i18n="privacy.data.title">数据收集</h4>
+                            <p data-i18n="privacy.data.desc">我们仅收集必要的本地存储数据，包括您的自定义设置和偏好，所有数据均存储在您的设备本地。</p>
+                        </div>
+                        <div class="privacy-item">
+                            <h4 data-i18n="privacy.usage.title">使用方式</h4>
+                            <p data-i18n="privacy.usage.desc">扩展程序仅在您访问网页时运行，不会收集您的浏览历史或个人信息。</p>
+                        </div>
+                        <div class="privacy-item">
+                            <h4 data-i18n="privacy.security.title">安全保障</h4>
+                            <p data-i18n="privacy.security.desc">所有数据均采用本地存储，不会上传到任何服务器，确保您的隐私安全。</p>
+                        </div>
+                    </div>
+                    <a href="privacy.html" class="btn btn-secondary" data-i18n="privacy.read-more">查看完整隐私政策</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="material-icons">rocket_launch</span>
+                        <span>DayDayUp</span>
+                    </div>
+                    <p data-i18n="footer.description">让每一天都充满正能量</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links.title">快速链接</h4>
+                    <a href="#features" data-i18n="footer.links.features">功能特色</a>
+                    <a href="#download" data-i18n="footer.links.download">下载安装</a>
+                    <a href="privacy.html" data-i18n="footer.links.privacy">隐私政策</a>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact.title">联系我们</h4>
+                    <p data-i18n="footer.contact.email">邮箱：hwygy001@gmail.com</p>
+                    <p data-i18n="footer.contact.version">版本：1.0.0</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DayDayUp. <span data-i18n="footer.rights">保留所有权利。</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
